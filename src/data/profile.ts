@@ -6,8 +6,8 @@ export const profile = {
   location: "Pakistan",
   availability: "Available for freelance & full-time",
   email: "hamisiddiqui49@gmail.com",
-  linkedin: "https://linkedin.com/in/hamid-abdullah",
-  github: "https://github.com/hamid-abdullah",
+  linkedin: "https://www.linkedin.com/in/hamid-abdullah-dev/",
+  github: "https://github.com/HamidAbdullah/",
   about: `I architect and ship production-grade SaaS platforms, AI-powered products, and cross-platform applications. With 4+ years of hands-on engineering, I take ideas from zero to deployed — owning frontend, backend, mobile, infrastructure, and AI integrations end to end.`,
   hero: {
     heading: "Engineering Products That Scale",

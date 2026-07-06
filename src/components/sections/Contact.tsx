@@ -17,14 +17,14 @@ const contactLinks = [
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/hamid-abdullah",
+    value: "linkedin.com/in/hamid-abdullah-dev",
     href: profile.linkedin,
     icon: LinkedinIcon,
     external: true,
   },
   {
     label: "GitHub",
-    value: "github.com/hamid-abdullah",
+    value: "github.com/HamidAbdullah",
     href: profile.github,
     icon: GithubIcon,
     external: true,
