@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { BackgroundEffects } from "@/components/ui/BackgroundEffects";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Skills } from "@/components/sections/Skills";
@@ -12,8 +13,9 @@ import { Contact } from "@/components/sections/Contact";
 export default function Home() {
   return (
     <>
+      <BackgroundEffects />
       <Navbar />
-      <main>
+      <main className="relative">
         <Hero />
         <About />
         <Skills />

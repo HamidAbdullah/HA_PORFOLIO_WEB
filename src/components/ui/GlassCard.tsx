@@ -4,19 +4,22 @@ interface GlassCardProps {
   children: React.ReactNode;
   className?: string;
   hover?: boolean;
+  glow?: boolean;
 }
 
 export function GlassCard({
   children,
   className,
   hover = true,
+  glow = false,
 }: GlassCardProps) {
   return (
     <div
       className={cn(
-        "rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md",
+        "gradient-border relative rounded-2xl p-6",
         hover &&
-          "transition-all duration-300 hover:border-white/20 hover:bg-white/[0.08] hover:shadow-xl hover:shadow-indigo-500/5",
+          "transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/5",
+        glow && "shadow-lg shadow-indigo-500/10",
         className,
       )}
     >

@@ -1,6 +1,5 @@
 "use client";
 
-import { CheckCircle2 } from "lucide-react";
 import { experience, experienceSummary } from "@/data/experience";
 import { AnimatedSection, AnimatedItem } from "@/components/ui/AnimatedSection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -8,55 +7,55 @@ import { GlassCard } from "@/components/ui/GlassCard";
 
 export function Experience() {
   return (
-    <AnimatedSection id="experience">
+    <AnimatedSection id="experience" className="relative">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <SectionHeading
+          index="05"
           label="Experience"
-          title="Professional Journey"
+          title="Track Record"
           description={experienceSummary.tagline}
         />
 
-        <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-6 top-0 hidden h-full w-px bg-gradient-to-b from-indigo-500/50 via-violet-500/30 to-transparent md:block" />
-
+        <div className="mx-auto max-w-4xl">
           {experience.map((item) => (
             <AnimatedItem key={item.period}>
-              <div className="relative md:pl-16">
-                <div className="absolute left-4 top-6 hidden h-4 w-4 rounded-full border-2 border-indigo-500 bg-background md:block" />
+              <GlassCard glow className="relative overflow-hidden">
+                <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-indigo-500/10 blur-3xl" />
 
-                <GlassCard className="mb-8">
-                  <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-                    <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-400">
-                      {item.period}
-                    </span>
-                    <span className="text-3xl font-bold text-foreground">
+                <div className="relative grid gap-8 md:grid-cols-[200px_1fr]">
+                  <div>
+                    <p className="font-mono text-4xl font-bold text-foreground">
                       {experienceSummary.years}
-                    </span>
+                    </p>
+                    <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                      Years
+                    </p>
+                    <p className="mt-6 font-mono text-xs text-indigo-400">
+                      {item.period}
+                    </p>
                   </div>
 
-                  <h3 className="mb-2 text-xl font-bold text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
-                  </p>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground md:text-2xl">
+                      {item.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
 
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Key Responsibilities
-                  </p>
-                  <ul className="grid gap-2 sm:grid-cols-2">
-                    {item.responsibilities.map((resp) => (
-                      <li
-                        key={resp}
-                        className="flex items-center gap-2 text-sm text-muted-foreground"
-                      >
-                        <CheckCircle2 className="h-4 w-4 shrink-0 text-indigo-400" />
-                        {resp}
-                      </li>
-                    ))}
-                  </ul>
-                </GlassCard>
-              </div>
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {item.responsibilities.map((resp) => (
+                        <span
+                          key={resp}
+                          className="rounded-lg border border-white/5 bg-white/[0.03] px-3 py-1.5 font-mono text-xs text-muted-foreground"
+                        >
+                          {resp}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </GlassCard>
             </AnimatedItem>
           ))}
         </div>

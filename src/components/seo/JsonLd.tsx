@@ -16,10 +16,6 @@ export function JsonLd() {
     },
     sameAs: [profile.linkedin, profile.github],
     knowsAbout: skills.flatMap((s) => s.skills),
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: profile.education.institution,
-    },
     hasOccupation: {
       "@type": "Occupation",
       name: profile.role,

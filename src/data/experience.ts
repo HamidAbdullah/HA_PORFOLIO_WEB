@@ -27,5 +27,5 @@ export const experienceSummary = {
   years: "4+",
   label: "Years Professional Experience",
   tagline:
-    "Building production-grade applications across the full stack — from architecture to deployment.",
+    "Shipping production software across SaaS, mobile, and AI — from system design to deployment.",
 };

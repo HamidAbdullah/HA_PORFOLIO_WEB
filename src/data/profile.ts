@@ -1,107 +1,112 @@
 export const profile = {
   name: "Hamid Abdullah",
-  role: "Full Stack JavaScript & AI Solutions Developer",
+  role: "Senior Full Stack Engineer",
+  tagline: "AI Solutions · SaaS · Product Engineering",
   experience: "4+ years",
   location: "Pakistan",
-  education: {
-    degree: "Bachelor's Degree in progress",
-    institution: "Virtual University of Pakistan",
-    semester: "7th semester",
-  },
+  availability: "Available for freelance & full-time",
   email: "hamisiddiqui49@gmail.com",
   linkedin: "https://linkedin.com/in/hamid-abdullah",
   github: "https://github.com/hamid-abdullah",
-  about: `I am a Full Stack JavaScript Developer with 4+ years of experience building SaaS products, AI-powered applications, mobile apps, automation systems, and scalable backend architectures. I work with React, Next.js, NestJS, Express.js, React Native, Expo, AI Agents, n8n, and end-to-end product development.`,
+  about: `I architect and ship production-grade SaaS platforms, AI-powered products, and cross-platform applications. With 4+ years of hands-on engineering, I take ideas from zero to deployed — owning frontend, backend, mobile, infrastructure, and AI integrations end to end.`,
   hero: {
-    heading: "Building SaaS Products, AI Solutions & Scalable Applications",
+    heading: "Engineering Products That Scale",
+    highlighted: ["Products", "Scale"],
     subheading:
-      "Full Stack JavaScript Developer with 4+ years of experience delivering web apps, mobile apps, AI agents, automation workflows, and SaaS platforms.",
+      "I design and build SaaS platforms, AI agents, mobile apps, and automation systems — from architecture to production deployment.",
     stats: [
-      { label: "4+ Years Experience", value: "4+" },
-      { label: "20+ Projects Delivered", value: "20+" },
-      { label: "SaaS Products", value: "SaaS" },
-      { label: "AI & Automation", value: "AI" },
+      { label: "Years Experience", value: "4+", suffix: "" },
+      { label: "Projects Shipped", value: "20", suffix: "+" },
+      { label: "SaaS Products", value: "5", suffix: "+" },
+      { label: "Tech Domains", value: "Full", suffix: " Stack" },
     ],
   },
   aboutHighlights: [
     {
-      title: "Full Stack Development",
+      title: "Full Stack Engineering",
       description:
-        "End-to-end web application development with modern JavaScript frameworks, REST APIs, and scalable architectures.",
+        "React, Next.js, NestJS, and Node.js — scalable APIs, real-time systems, and performant frontends.",
       icon: "code",
     },
     {
-      title: "Mobile App Development",
+      title: "Mobile Development",
       description:
-        "Cross-platform mobile apps with React Native and Expo, from concept to App Store deployment.",
+        "Production React Native & Expo apps with offline support, push notifications, and store deployment.",
       icon: "smartphone",
     },
     {
-      title: "AI Agents & Automation",
+      title: "AI & Automation",
       description:
-        "Building intelligent AI agents, LLM integrations, and workflow automation with n8n and OpenAI APIs.",
+        "LLM integrations, autonomous agents, n8n workflows, and intelligent business process automation.",
       icon: "bot",
     },
     {
-      title: "SaaS Product Development",
+      title: "SaaS Architecture",
       description:
-        "Designing and shipping SaaS platforms with subscription models, dashboards, and multi-tenant architectures.",
+        "Multi-tenant systems, subscription billing, admin dashboards, and cloud-native infrastructure.",
       icon: "rocket",
     },
     {
-      title: "Client Communication",
+      title: "Client Delivery",
       description:
-        "Leading client meetings, gathering requirements, and translating business needs into technical solutions.",
+        "Direct client collaboration — scoping, technical leadership, and shipping on deadline.",
       icon: "users",
     },
+  ],
+  expertise: [
+    "SaaS Development",
+    "AI Integration",
+    "System Architecture",
+    "Mobile Apps",
+    "API Design",
+    "DevOps & CI/CD",
   ],
   aiExpertise: [
     {
       title: "AI Agents",
       description:
-        "Autonomous agents that handle complex tasks, decision-making, and multi-step workflows.",
+        "Autonomous multi-step agents for task execution, decision-making, and workflow orchestration.",
     },
     {
       title: "LLM Applications",
       description:
-        "Production-grade applications powered by OpenAI, Claude, and custom LLM integrations.",
+        "Production apps powered by OpenAI, Claude, and custom model integrations with RAG pipelines.",
     },
     {
       title: "Workflow Automation",
       description:
-        "Automating business processes with intelligent pipelines and event-driven architectures.",
+        "Event-driven automation connecting APIs, databases, and third-party services at scale.",
     },
     {
-      title: "n8n Automations",
+      title: "n8n Orchestration",
       description:
-        "Complex workflow orchestration connecting APIs, databases, and third-party services.",
+        "Complex multi-node workflows for data sync, notifications, and business logic automation.",
     },
     {
-      title: "AI Model Training",
+      title: "Model Fine-Tuning",
       description:
-        "Fine-tuning and training models for domain-specific use cases and improved accuracy.",
+        "Domain-specific model training and optimization for accuracy and cost efficiency.",
     },
     {
-      title: "Business Process Automation",
+      title: "Process Automation",
       description:
-        "Streamlining operations with automated reporting, notifications, and data processing.",
+        "End-to-end business automation — reporting, data pipelines, and operational workflows.",
     },
   ],
   seo: {
-    title: "Hamid Abdullah | Full Stack JavaScript & AI Solutions Developer",
+    title: "Hamid Abdullah | Senior Full Stack Engineer · AI & SaaS",
     description:
-      "Full Stack JavaScript Developer with 4+ years of experience building SaaS products, AI-powered applications, mobile apps, and scalable backend architectures.",
+      "Senior Full Stack Engineer specializing in SaaS products, AI-powered applications, mobile apps, and scalable backend architecture. 4+ years shipping production software.",
     url: "https://hamidabdullah.dev",
     ogImage: "/og-image.svg",
     keywords: [
-      "Full Stack Developer",
-      "JavaScript Developer",
-      "React Developer",
-      "Next.js Developer",
+      "Senior Full Stack Developer",
+      "SaaS Engineer",
       "AI Solutions Developer",
-      "SaaS Developer",
+      "Next.js Developer",
       "React Native Developer",
-      "Pakistan Developer",
+      "NestJS Developer",
+      "Product Engineer",
     ],
   },
 } as const;
